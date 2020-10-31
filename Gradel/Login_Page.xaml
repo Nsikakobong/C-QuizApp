@@ -1,0 +1,46 @@
+﻿<Page x:Class="Gradel.Login_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Gradel"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Login_Page" Width="1292" Height="670">
+    <Page.Resources>
+        <Color x:Key="Pink-Bkg">#FFEA11E4</Color>
+    </Page.Resources>
+
+    <Grid>
+        <Ellipse x:Name="User_logo" HorizontalAlignment="Right" Margin="0,135.625,243.75,0" Stroke="Black" StrokeThickness="0" Width="100" RenderTransformOrigin="0.692,-0.288" Height="100" VerticalAlignment="Top">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="Group 6.jpg"/>
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <Label x:Name="Username_label" Content="Username" HorizontalAlignment="Right" Margin="0,311.625,177.75,322.375" Width="278" FontFamily="Segoe WP Semibold" FontSize="16" Opacity="0.75">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource Pink-Bkg}"/>
+            </Label.Foreground>
+        </Label>
+
+        <Label x:Name="Password_label" Content="Password" HorizontalAlignment="Right" Margin="0,0,277.75,216.374" Width="180" FontFamily="Segoe WP Semibold" FontSize="16" Opacity="0.75" Height="34" VerticalAlignment="Bottom">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource Pink-Bkg}"/>
+            </Label.Foreground>
+        </Label>
+
+        <Rectangle x:Name="User_icon" HorizontalAlignment="Right" Height="27.404" Margin="0,0,123.25,291.875" Stroke="Black" StrokeThickness="0" VerticalAlignment="Bottom" Width="28.5" RenderTransformOrigin="-0.667,0.453">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="user_50px.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle x:Name="Password_icon" HorizontalAlignment="Right" Height="21.635" Margin="0,0,127.25,185.207" Stroke="Black" StrokeThickness="0" VerticalAlignment="Bottom" Width="22.5" RenderTransformOrigin="-0.667,0.453">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="lock_26px.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+    </Grid>
+</Page>
